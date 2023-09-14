@@ -13,11 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         \App\Models\User::factory(50)->create();
+         \App\Models\User::factory(10)->create();
          \App\Models\Topic::create(['name' => 'Featured Sites', 'slug' => 'featured']);
          \App\Models\Topic::create(['name' => 'Useful Links', 'slug' => 'links']);
          \App\Models\Topic::create(['name' => 'Guides & Tutorials', 'slug' => 'tutorials']);
-         \App\Models\Post::factory(50)->create();
+         \App\Models\Post::factory(10)->create();
 
 
     }
